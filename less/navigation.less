@@ -21,9 +21,16 @@
     .navbar{
         // border: @testborderthree;
         margin-top: 10px;
-        width:50%;
+        width:60%;
         .flexrow-mixin();
         margin-bottom: 10px;
+        
+        @media @phone{
+            color:green;
+            width:80%;
+        
+          }
+        
         
         a{
             text-decoration: none;
