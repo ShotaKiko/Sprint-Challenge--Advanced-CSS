@@ -1,1 +1,43 @@
 // Navigation code here
+
+.header{
+    
+    // border: @testborderone;
+    background: @nav-bg;
+    font-style: @nav-font;
+    border: 1px solid @nav-border;
+    max-width: 1000px;
+    width: 100%;
+    
+
+    .flexcolumn-mixin();
+    
+    .title{
+        // border: @testbordertwo;
+        .flexrow-mixin();
+        font-size: @titlefontsize;
+    }
+
+    .navbar{
+        // border: @testborderthree;
+        margin-top: 10px;
+        width:60%;
+        .flexrow-mixin();
+        margin-bottom: 10px;
+        
+        @media @phone{
+            color:green;
+            width:80%;
+        
+          }
+        
+        
+        a{
+            text-decoration: none;
+            font-size: @navitemssize;
+            font-style: @nav-font;
+            color: @ebony-clay;
+        }
+    }
+
+}
